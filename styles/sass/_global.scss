@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;700&display=swap');
+
+    // font-family: 'Lora', serif;
+
+    // font-family: 'Roboto', sans-serif;
+$black: #2c2c2c;
+$darkBlue:#285e64;
+$orange: #f6a823;
+$gray: #4f4f4f;
+$lightBlue: #05afc1;
+$red: #a82706;
+$offWhite: #f0efed;
+
+@mixin squareBehindImg {
+    position: absolute;
+    background-color:white;
+    top: 25px;
+    left: 25px;
+    right: -25px;
+    bottom: -25px;
+    z-index: -2;
+}
+
+.skipLink {
+    position: absolute;
+    left: -1000px;
+}
+
+.skipLink:focus,
+.skiplink:active {
+    left: 20px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    max-width: 1400px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin: 0 auto;
+    line-height: 1.2;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
