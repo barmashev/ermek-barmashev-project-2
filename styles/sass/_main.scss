@@ -1,9 +1,63 @@
 //WHO IS SOPHIE STYLES
 .whoIsSophie {
-    background-color: $offWhite;
-
-    &__container {
-        margin: 50px 0;
-    }
+    @include graySection
 }
 //WHO IS SOPHIE STYLES END
+
+//GALLERY STYLES
+
+.gallery {
+    display: flex;
+}
+
+.galleryColumn {
+    width: 50%;
+
+    &__text {
+        padding: 50px;
+
+        &--left {
+            @extend .galleryColumn__text;
+            text-align: right;
+        }
+
+        &--right {
+            @extend .galleryColumn__text;
+
+        }
+    }
+
+    &__img {
+
+        &--left {
+            box-shadow: 15px 15px $red, -70px 15px $red ;
+            position: relative;
+            top:-35px;
+        }
+
+        &--right {
+            box-shadow: -15px 15px $orange, 70px 15px $orange ;
+            position: relative;
+            bottom:-35px;
+        }
+    }
+    
+}
+
+
+
+//GALLERY STYLES END
+
+//INFO STYLES
+
+.info {
+    @include graySection;
+
+    &__item {
+        &::before {
+            
+        }
+    }
+}
+
+//INFO STYLES END

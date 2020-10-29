@@ -17,7 +17,7 @@ header {
     flex-direction: column;
     justify-content: center;
     
-    .abc {
+    &__container {
         position: relative;
     }
 
@@ -37,17 +37,9 @@ header {
 
 .heroImg {
     width: 40%;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        z-index: 1;
-
-        img {
-            width: 100%;
-        }
-        
-        &__squareBehindImg {
-            @include squareBehindImg;
-    
-        }
-    }
+    position: absolute;
+    right: 25px;
+    bottom: -10px;
+    z-index: 1;
+    @include smallBoxShadow(white);
+}
