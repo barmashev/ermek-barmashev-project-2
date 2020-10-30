@@ -1,6 +1,6 @@
 //WHO IS SOPHIE STYLES
 .whoIsSophie {
-    @include graySection
+    @include sectionStyle;
 }
 //WHO IS SOPHIE STYLES END
 
@@ -19,10 +19,12 @@
         &--left {
             @extend .galleryColumn__text;
             text-align: right;
+            padding-left: 0;
         }
 
         &--right {
             @extend .galleryColumn__text;
+            padding-right: 0;
 
         }
     }
@@ -48,16 +50,77 @@
 
 //GALLERY STYLES END
 
-//INFO STYLES
+//INFO SECTION STYLES
 
 .info {
-    @include graySection;
+    @include sectionStyle;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     &__item {
-        &::before {
-            
+        position: relative;
+        margin: 60px 0 60px 60px;
+        width: calc(50% - 60px);
+        i {
+            position: absolute;
+            top:15px;
+            left: -60px;
+            padding: 15px;
+            border-radius: 50%;
+            background-color: $orange;
         }
+        
     }
 }
 
 //INFO STYLES END
+
+//JOURNEY SECTION STYLES
+.journey {
+    @include sectionStyle;
+
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        a {
+            align-self: start;
+        }
+    }
+
+    &__img {
+        @include smallBoxShadow($orange);
+        margin-right: 100px;
+    }
+
+
+}
+
+//JOURNEY SECTION STYLES END
+
+//BOTTOM GALLERY
+
+.bottomGallery {
+    @include sectionStyle(white);
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        width: calc(100%/3 - 20px);
+    }
+}
+
+//BOTTOM GALLERY END
+
+
+

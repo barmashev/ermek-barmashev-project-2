@@ -15,8 +15,8 @@ $offWhite: #f0efed;
     box-shadow: 25px 25px $color;
 }
 
-@mixin graySection {
-    background-color: $offWhite;
+@mixin sectionStyle ($color:$offWhite) {
+    background-color: $color;
     padding: 80px 0;
 }
 
@@ -48,6 +48,13 @@ body {
     line-height: 1.4;
 }
 
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+}
+
 img {
     width: 100%;
     display: block;
@@ -59,12 +66,7 @@ a {
     color: $black;
 }
 
-.wrapper {
-    width: 90%;
-    margin: 0 auto;
-    position: relative;
-    height: 100%;
-}
+
 //REUSABLE ELEMENTS STYLES
 nav {
     align-self: center;
@@ -94,7 +96,22 @@ nav {
 .moreButton {
     font-weight: bold;
     letter-spacing: 1px;
-    margin: 40px 0;
+    margin-top: 40px;
     padding: 15px 30px;
     background-color: $lightBlue;
+}
+
+.moreButton:hover,
+.moreButton:focus,
+.moreButton:active {
+    background-color: $darkBlue;
+}
+
+
+
+
+h3 {
+    font-weight: bold;
+    font-size: 3.2rem;
+    margin-bottom: 20px;
 }
