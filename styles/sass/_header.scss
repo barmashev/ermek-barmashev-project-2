@@ -1,14 +1,15 @@
 header {
     background-color: $orange;
     position: relative;
+}
 
-    .wrapper {
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+.navMain {
+    @include navStyle;
+    .nav__item:nth-child(1) a {
+            color: $offWhite;
     }
 }
+
 
 .mainHeading {
     height: 75vh;
@@ -19,6 +20,7 @@ header {
     
     &__container {
         position: relative;
+        left: 30px;
     }
 
     h1 {
