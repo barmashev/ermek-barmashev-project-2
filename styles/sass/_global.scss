@@ -41,6 +41,11 @@ $offWhite: #f0efed;
     }
 }
 
+@mixin blogSection {
+    padding: 20px;
+    background-color: white;
+}
+
 //SKIP TO MAIN LINK STYLES
 .skipLink {
     position: absolute;
@@ -113,6 +118,11 @@ a {
     margin: 0;
 }
 
+h2 {
+    font-weight: bold;
+    font-size: 4.2rem;
+    margin-bottom: 20px;
+}
 
 h3 {
     font-weight: bold;

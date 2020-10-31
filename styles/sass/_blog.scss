@@ -9,5 +9,32 @@
 
 //MAIN STYLES
 
+.mainBlog {
+    background-color: $offWhite;
+    padding: 50px 0;
+}
+
+.mainContent {
+
+    .blogInfo{
+        font-style: italic;
+
+        span {
+            color: $darkBlue;
+        }
+    }
+
+    &__article {
+        @include blogSection;
+        border-bottom: 5px solid $orange;
+
+    }
+
+    &__comment {
+
+    }
+}
+
+
 //MAIN STYLES END
 

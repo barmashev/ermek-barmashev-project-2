@@ -304,6 +304,12 @@ a {
   margin: 0;
 }
 
+h2 {
+  font-weight: bold;
+  font-size: 4.2rem;
+  margin-bottom: 20px;
+}
+
 h3 {
   font-weight: bold;
   font-size: 3.2rem;
@@ -454,7 +460,7 @@ header {
 
 .info__item i {
   position: absolute;
-  top: 15px;
+  top: 0;
   left: -60px;
   padding: 15px;
   border-radius: 50%;
@@ -553,4 +559,23 @@ footer {
 
 .navBlog .nav__item:nth-child(4) a {
   color: #f0efed;
+}
+
+.mainBlog {
+  background-color: #f0efed;
+  padding: 50px 0;
+}
+
+.mainContent .blogInfo {
+  font-style: italic;
+}
+
+.mainContent .blogInfo span {
+  color: #285e64;
+}
+
+.mainContent__article {
+  padding: 20px;
+  background-color: white;
+  border-bottom: 5px solid #f6a823;
 }
