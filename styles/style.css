@@ -222,7 +222,7 @@ html {
           box-sizing: inherit;
 }
 
-.sr-only {
+.srOnly {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -244,6 +244,7 @@ html {
 .skipLink:focus,
 .skiplink:active {
   left: 20px;
+  background-color: red;
 }
 
 html {
@@ -313,6 +314,12 @@ h2 {
 h3 {
   font-weight: bold;
   font-size: 3.2rem;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 2.4rem;
   margin-bottom: 20px;
 }
 
@@ -561,13 +568,33 @@ footer {
   color: #f0efed;
 }
 
+.blogSection {
+  padding: 30px;
+  background-color: white;
+  margin: 30px 0;
+}
+
 .mainBlog {
   background-color: #f0efed;
   padding: 50px 0;
 }
 
+.mainBlog .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainContent {
+  width: calc(70% - 30px);
+}
+
 .mainContent .blogInfo {
   font-style: italic;
+  margin: 15px 0;
 }
 
 .mainContent .blogInfo span {
@@ -575,7 +602,88 @@ footer {
 }
 
 .mainContent__article {
-  padding: 20px;
-  background-color: white;
   border-bottom: 5px solid #f6a823;
+}
+
+.mainContent__comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.mainContent__comment img {
+  width: 90px;
+  height: 90px;
+  margin-right: 30px;
+}
+
+.mainContent__comment div .commentDate {
+  font-style: italic;
+  color: #285e64;
+}
+
+.mainContent__comment:last-child {
+  border-bottom: 5px solid #f6a823;
+}
+
+.asideContent {
+  width: 30%;
+}
+
+.asideContent a {
+  color: #285e64;
+  font-weight: bold;
+}
+
+.asideContent ul {
+  list-style-type: none;
+}
+
+.asideContent ul li::before {
+  content: "\2022";
+  color: orange;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: 1em;
+}
+
+.blogForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blogForm input[type=text] {
+  width: calc(50% - 10px);
+  font-style: italic;
+}
+
+.blogForm input[type=text].nameInput {
+  margin-right: 20px;
+}
+
+.blogForm textarea {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.blogForm input, .blogForm textarea {
+  font-style: italic;
+  padding: 20px;
+  border: none;
+}
+
+.blogForm .moreButton {
+  width: 100%;
+  text-align: center;
+  border: none;
 }

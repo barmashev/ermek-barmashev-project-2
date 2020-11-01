@@ -9,15 +9,27 @@
 
 //MAIN STYLES
 
+.blogSection {
+    padding: 30px;
+    background-color: white;
+    margin: 30px 0;
+}
+
 .mainBlog {
     background-color: $offWhite;
     padding: 50px 0;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .mainContent {
-
+    width: calc(70% - 30px);
     .blogInfo{
         font-style: italic;
+        margin: 15px 0;
 
         span {
             color: $darkBlue;
@@ -25,16 +37,98 @@
     }
 
     &__article {
-        @include blogSection;
         border-bottom: 5px solid $orange;
 
     }
 
     &__comment {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
 
+        img {
+            width: 90px;
+            height: 90px;
+            margin-right: 30px;
+        }
+
+        div {
+            // width: calc(70% - 30px);
+            .commentDate {
+                font-style: italic;
+                color: $darkBlue;
+            }
+
+        }
+    }
+
+    &__comment:last-child {
+        border-bottom: 5px solid $orange;
     }
 }
 
 
 //MAIN STYLES END
+
+//ASIDE STYLES
+.asideContent {
+    width: 30%;
+
+    a {
+        color: $darkBlue;
+        font-weight: bold;
+    }
+
+    ul {
+        list-style-type: none;
+
+        li::before {
+            content: "\2022";
+            color: orange;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: 1em;            
+        }
+    }
+}
+
+//ASIDE STYLES END
+
+
+
+//FORM STYLES
+    .blogForm {
+        display:flex;
+        flex-wrap: wrap;
+
+        input[type=text] {
+            width: calc(50% - 10px);
+            font-style: italic;
+
+            &.nameInput {
+                margin-right: 20px;
+            }
+        }
+
+        textarea {
+            width: 100%;
+            margin-top: 40px;            
+        }
+
+        input, textarea {
+            font-style: italic;
+            padding: 20px;
+            border: none;
+        }
+
+        .moreButton {
+            width: 100%;
+            text-align: center;
+            border: none;
+        }
+    }
+//FORM STYLES END
+
+
 

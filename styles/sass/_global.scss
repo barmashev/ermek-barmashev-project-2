@@ -41,9 +41,10 @@ $offWhite: #f0efed;
     }
 }
 
-@mixin blogSection {
-    padding: 20px;
-    background-color: white;
+@mixin headingStyle ($fontSize) {
+    font-weight: bold;
+    font-size: $fontSize;
+    margin-bottom: 20px;
 }
 
 //SKIP TO MAIN LINK STYLES
@@ -55,6 +56,7 @@ $offWhite: #f0efed;
 .skipLink:focus,
 .skiplink:active {
     left: 20px;
+    background-color: red;
 }
 
 html {
@@ -119,13 +121,13 @@ a {
 }
 
 h2 {
-    font-weight: bold;
-    font-size: 4.2rem;
-    margin-bottom: 20px;
+    @include headingStyle(4.2rem);
 }
 
 h3 {
-    font-weight: bold;
-    font-size: 3.2rem;
-    margin-bottom: 20px;
+    @include headingStyle(3.2rem);
+}
+
+h4 {
+    @include headingStyle(2.4rem);
 }
