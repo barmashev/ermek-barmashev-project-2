@@ -47,6 +47,11 @@ $offWhite: #f0efed;
     margin-bottom: 20px;
 }
 
+@mixin mainStyle {
+    background-color: $offWhite;
+    padding: 50px 0;
+}
+
 //SKIP TO MAIN LINK STYLES
 .skipLink {
     position: absolute;
@@ -111,17 +116,14 @@ a {
     background-color: $darkBlue;
 }
 
-.headingBlogCont {
+h2 {
     position: absolute;
     font-size: 8rem;
     bottom: -55px;
     left: 0;
     padding: 0;
     margin: 0;
-}
-
-h2 {
-    @include headingStyle(4.2rem);
+    z-index: 2;
 }
 
 h3 {
@@ -131,3 +133,34 @@ h3 {
 h4 {
     @include headingStyle(2.4rem);
 }
+
+form {
+        display:flex;
+        flex-wrap: wrap;
+
+        input[type=text] {
+            width: calc(50% - 10px);
+            font-style: italic;
+
+            &.nameInput {
+                margin-right: 20px;
+            }
+        }
+
+        textarea {
+            width: 100%;
+            margin-top: 40px;            
+        }
+
+        input, textarea {
+            font-style: italic;
+            padding: 20px;
+            border: none;
+        }
+
+        .moreButton {
+            width: 100%;
+            text-align: center;
+            border: none;
+        }
+    }

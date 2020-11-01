@@ -1,0 +1,60 @@
+//HEADER STYLES
+
+.navContact {
+    @include navStyle;
+    .nav__item:nth-child(5) a {
+        color: $offWhite;
+    }
+}
+
+//HEADER STYLES END
+
+//MAIN STYLES
+
+.mainContact {
+    @include mainStyle;
+
+    .wrapper {
+        display: flex;
+
+        form {
+        width: 70%;
+        }
+
+        .contactInfo {
+            width: 30%;
+            margin: 0 30px 0 0;
+            align-self: start;
+
+            ul {
+                list-style-type: none;
+                display: flex;
+            }
+
+            li i {
+                color: $orange;
+                margin-right: 15px;
+                font-size: 2.5rem;
+
+            }
+
+            .email {
+                font-weight: bold;
+                margin: 20px 0;
+            }
+
+            p {
+                margin: 10px 0;
+            };
+        }
+
+    }
+
+    
+}
+
+
+
+//MAIN STYLES END
+
+

@@ -10,14 +10,13 @@
 //MAIN STYLES
 
 .blogSection {
-    padding: 30px;
+    padding: 20px;
     background-color: white;
     margin: 30px 0;
 }
 
 .mainBlog {
-    background-color: $offWhite;
-    padding: 50px 0;
+    @include mainStyle;
 
     .wrapper {
         display: flex;
@@ -95,40 +94,6 @@
 
 //ASIDE STYLES END
 
-
-
-//FORM STYLES
-    .blogForm {
-        display:flex;
-        flex-wrap: wrap;
-
-        input[type=text] {
-            width: calc(50% - 10px);
-            font-style: italic;
-
-            &.nameInput {
-                margin-right: 20px;
-            }
-        }
-
-        textarea {
-            width: 100%;
-            margin-top: 40px;            
-        }
-
-        input, textarea {
-            font-style: italic;
-            padding: 20px;
-            border: none;
-        }
-
-        .moreButton {
-            width: 100%;
-            text-align: center;
-            border: none;
-        }
-    }
-//FORM STYLES END
 
 
 
