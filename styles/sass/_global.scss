@@ -21,14 +21,19 @@ $offWhite: #f0efed;
 }
 
 @mixin navStyle  {
-    width: 50%;
-    padding: 20px;
+    padding: 20px 0;
     margin: 0 auto;
     font-family: 'Lora', serif;
+    position: relative;
+    z-index: 10;
+
     .nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 50%;
+        min-width: 500px;
+        margin: 0 auto;
         &__item {
             list-style-type: none;
             display: inline-block;
@@ -88,6 +93,11 @@ body {
     height: 100%;
 }
 
+input[type="checkbox"],
+    .burger {
+        display: none;
+    }
+
 img {
     width: 100%;
     display: block;
@@ -114,6 +124,14 @@ a {
 .moreButton:focus,
 .moreButton:active {
     background-color: $darkBlue;
+}
+
+h1 {
+    font-size: 12rem;
+    font-family: 'Lora', serif;
+    margin: 0;
+    position: relative;
+    z-index: 5;
 }
 
 h2 {
