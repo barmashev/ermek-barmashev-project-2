@@ -1,7 +1,6 @@
 //HEADER STYLES
 
 .navContact {
-    @include navStyle;
     .nav__item:nth-child(5) a {
         color: $offWhite;
     }
@@ -29,6 +28,8 @@
             ul {
                 list-style-type: none;
                 display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
             }
 
             li i {

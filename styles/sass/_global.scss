@@ -20,32 +20,6 @@ $offWhite: #f0efed;
     padding: 80px 0;
 }
 
-@mixin navStyle  {
-    padding: 20px 0;
-    margin: 0 auto;
-    font-family: 'Lora', serif;
-    position: relative;
-    z-index: 10;
-
-    .nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 50%;
-        min-width: 500px;
-        margin: 0 auto;
-        &__item {
-            list-style-type: none;
-            display: inline-block;
-        }
-
-        &__item:nth-child(3) a {
-            font-size: 3.7rem;
-            font-weight: bold;
-        }
-    }
-}
-
 @mixin headingStyle ($fontSize) {
     font-weight: bold;
     font-size: $fontSize;
@@ -150,6 +124,32 @@ h3 {
 
 h4 {
     @include headingStyle(2.4rem);
+}
+
+nav {
+    padding: 20px 0;
+    margin: 0 auto;
+    font-family: 'Lora', serif;
+    position: relative;
+    z-index: 10;
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        min-width: 500px;
+        margin: 0 auto;
+        &__item {
+            list-style-type: none;
+            display: inline-block;
+        }
+
+        &__item:nth-child(3) a {
+            font-size: 3.7rem;
+            font-weight: bold;
+        }
+    }
 }
 
 form {

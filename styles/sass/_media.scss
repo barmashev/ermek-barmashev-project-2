@@ -1,4 +1,4 @@
-@media (max-width:768px) {
+@media (max-width:668px) {
     body {
         font-size: 1.6rem;
     }
@@ -22,19 +22,39 @@
         position: absolute;
         display: block;
         font-size: 3rem;
-        color: $lightBlue;
+        color: $red;
         top: 20px;
         right: 20px;
         z-index: 4;
     }
 
-    .nav {
+
+    nav .nav {
         display: none;
+        position: absolute;
+        flex-direction: column;
+        right: 0;
+        top: 0;
+        background-color: $lightBlue;
+        width: 300px;
+        padding: 40px;
+
+        li a {
+            font-size: 2rem;
+            margin: 20px;
+        }
+
+        .sophie {
+            display: none;
+        }
     }
 
     input[type="checkbox"]:checked + .nav {
-        display: flex;
-        flex-direction: column;
+        display: flex;     
+    }
+
+    .whoIsSophie {
+        padding: 30px 0;
     }
 
     .gallery {
@@ -49,12 +69,25 @@
             &__img {
                 position: static;
             }
+
+            &__text {
+                padding: 30px 0;
+                text-align: center;
+            }
         }
     }
-
-    
-
     //LANDING PAGE STYLES END
+
+    // BLOG PAGE STYLES
+    .mainContent {
+        width: 100%;
+    }
+    .asideContent {
+        display: none;
+    }
+    // BLOG PAGE STYLES END
+
+
 }
 
 @media (max-width:480px) {
@@ -92,5 +125,33 @@
 
     }
 
+    .bottomGallery {
+
+        & img {
+            width: calc(100%/2 - 10px)
+        }
+        & img:last-child {
+            display: none;
+        }
+    }
+
     //LANDING PAGE STYLES END
+
+    //CONTACT PAGE STYLES
+
+    .mainContact .wrapper {
+        flex-direction: column-reverse;
+
+        .contactInfo {
+            width: 100%;
+            text-align: center;
+        }
+
+        form {
+            width: 100%;
+        }
+    }
+
+    //CONTACT PAGE STYLES END
+
 }

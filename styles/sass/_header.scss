@@ -5,9 +5,8 @@ header {
 }
 
 .navMain {
-    @include navStyle;
     .nav__item:nth-child(1) a {
-            color: $offWhite;
+        color: $offWhite;
     }
 }
 

@@ -1,7 +1,6 @@
 //HEADER STYLES
 .navBlog {
-    @include navStyle;
-    .nav__item:nth-child(4) a {
+    li:nth-child(4) a {
         color: $offWhite;
     }
 }
