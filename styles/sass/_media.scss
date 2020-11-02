@@ -1,4 +1,4 @@
-@media (max-width:668px) {
+@media (max-width:768px) {
     body {
         font-size: 1.6rem;
     }
@@ -28,16 +28,13 @@
         z-index: 4;
     }
 
+    nav {
+        padding: 0;
+    }
+
 
     nav .nav {
-        display: none;
-        position: absolute;
-        flex-direction: column;
-        right: 0;
-        top: 0;
-        background-color: $lightBlue;
-        width: 300px;
-        padding: 40px;
+        display: none;     
 
         li a {
             font-size: 2rem;
@@ -50,7 +47,15 @@
     }
 
     input[type="checkbox"]:checked + .nav {
-        display: flex;     
+        display: flex;  
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        right: 0;
+        top: 0;
+        background-color: $lightBlue;
+        width: 100%;
+        padding: 40px 0; 
     }
 
     .whoIsSophie {
@@ -92,6 +97,14 @@
 
 @media (max-width:480px) {
     //LANDING PAGE STYLES
+    .moreButton {
+        margin: 15px auto;
+    }
+
+    .whoIsSophie {
+        text-align: center;
+    }
+
     .info {
         padding: 40px 0;
 
@@ -108,6 +121,7 @@
 
     .journey {
         padding: 20px 0;
+        text-align: center;
 
         &__container {
             flex-direction: column;

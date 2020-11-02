@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;700&display=swap');
 
-    // font-family: 'Lora', serif;
-
-    // font-family: 'Roboto', sans-serif;
 $black: #2c2c2c;
 $darkBlue:#285e64;
 $orange: #f6a823;
@@ -24,6 +21,7 @@ $offWhite: #f0efed;
     font-weight: bold;
     font-size: $fontSize;
     margin-bottom: 20px;
+    z-index: 9;
 }
 
 @mixin mainStyle {
@@ -42,6 +40,9 @@ $offWhite: #f0efed;
     left: 20px;
     background-color: red;
 }
+
+//SKIP TO MAIN LINK STYLES END
+
 
 html {
     font-size: 62.5%;
